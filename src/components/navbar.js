@@ -7,19 +7,30 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const BasicExample = () => {
   return (
-    <Navbar bg="light" expand="md">
+    <Navbar className="shadow" bg="light" expand="md">
       <Container>
         <Navbar.Brand href="#home">React By Hermess</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">React Document</Nav.Link>
+            <Nav.Link
+              href="https://legacy.reactjs.org/docs/getting-started.html"
+              target="_blank"
+            >
+              React Document
+            </Nav.Link>
             <NavDropdown title="Exercise" id="basic-nav-dropdown">
               <NavDropdown.Item>
-                <Link to="/dating">Dating</Link>
+                <Link className="nav-link" to="/dating">
+                  Dating
+                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Cart</NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link className="nav-link" to="/Cart">
+                  Cart
+                </Link>
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Cocktail</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">

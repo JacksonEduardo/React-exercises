@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* START STYLE OF NAVBAR */
+.background{
+  background-color:aliceblue;
+}
+/* END STYLE OF NAVBAR */
