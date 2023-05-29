@@ -35,7 +35,11 @@ const BasicExample = () => {
                   Dark Mode
                 </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Cocktail</NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link className="nav-link" to="/holliday">
+                  Hollidays
+                </Link>
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link

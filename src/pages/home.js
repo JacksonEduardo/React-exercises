@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="background vh-100 w-100">
       <div className="pt-5">
-        <h1 className="text-center">Welcome in React exercise</h1>
+        <h1 className="text-center text-dark">Welcome in React exercise</h1>
         <div className="d-flex justify-content-center">
           <img src={logo} className="App-logo" alt="logo" />
         </div>

@@ -1,8 +1,8 @@
 import React from "react";
-import data from "../data/data";
+import data from "../../data/data";
 import { useState } from "react";
-import "../style/dating.css";
-import List from "../logic/List";
+import "../../style/dating.css";
+import List from "./List";
 const Dating = () => {
   const [people, setPeople] = useState(data);
 
