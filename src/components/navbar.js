@@ -27,8 +27,8 @@ const BasicExample = () => {
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link className="nav-link" to="/Cart">
-                  Cart
+                <Link className="nav-link" to="/dark">
+                  Dark Mode
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Cocktail</NavDropdown.Item>
