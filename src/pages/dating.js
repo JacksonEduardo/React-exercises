@@ -16,8 +16,8 @@ const Dating = () => {
     });
   };
   return (
-    <section>
-      <div className="Container">
+    <section className="sectionDating">
+      <div className="ContainerDating">
         <h2 style={{ color: "var(--bg-blue)" }}>Prossimi incontri</h2>
         <div className="people-list">
           <List data={people} delete={removeItem} />

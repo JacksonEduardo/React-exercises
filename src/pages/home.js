@@ -9,10 +9,10 @@ const Home = () => {
         <div className="d-flex justify-content-center">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <p className="fst-italic text-center fs-5">
+        <p className="fst-italic text-center text-dark fs-5">
           In this site you can found some exercise make during a React Lesson
         </p>
-        <p className="fst-italic text-center">
+        <p className="fst-italic text-center text-dark">
           Navigate with Navbar to see all exercise
         </p>
       </div>

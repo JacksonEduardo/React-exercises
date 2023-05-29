@@ -1,13 +1,14 @@
 import React from "react";
+import "../../style/darkMode.css";
 
 const Article = ({ title, body }) => {
   return (
-    <article>
+    <article className="darkModeContainer">
       <div style={{ position: "relative", height: "fit-content" }}>
         <h4>{title}</h4>
         <div className="underline"></div>
       </div>
-      <p>{body}</p>
+      <p className="paragrafDarkMode">{body}</p>
     </article>
   );
 };

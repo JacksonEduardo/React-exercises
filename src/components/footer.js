@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "../App.css";
 
 // the CSS of footer is in App.css
 const Footer = () => {
@@ -10,21 +11,21 @@ const Footer = () => {
       <div className="d-flex justify-content-between">
         {/* <button className="btn btn-dark text-white" onClick={}>Last Page</button> */}
         <button
-          className="btn btn-dark text-white"
+          className="buttonFooter text-white"
           onClick={() => navigate("/")}
         >
           Home
         </button>
         <button
-          className="btn btn-dark text-white"
+          className="buttonFooter text-white"
           onClick={() => navigate(-1)}
         >
           Last Page
         </button>
       </div>
       <div className="d-flex justify-content-around">
-        <button className="btn btn-dark text-white">bottone destro</button>
-        <button className="btn btn-dark text-white">bottone sinistro</button>
+        <button className="buttonFooter text-white">bottone destro</button>
+        <button className="buttonFooter text-white">bottone sinistro</button>
       </div>
     </div>
   );

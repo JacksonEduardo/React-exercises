@@ -37,8 +37,32 @@
   }
 }
 
-/* START STYLE OF NAVBAR */
+/* START STYLE OF HOME */
 .background{
-  background-color:aliceblue;
+  background-color:rgb(227, 232, 236);
 }
-/* END STYLE OF NAVBAR */
+/* END STYLE OF HOME */
+
+/* START STYLE FOOTER */
+.buttonFooter {
+  display: inline-block;
+  border: none;
+  padding: 0.4rem 1.25rem;
+  border-radius: var(--btn-radius);
+  box-shadow: var(--dark-shadow);
+  letter-spacing: var(--letter-spacing);
+  font-size: 0.55rem;
+  transition: var(--btn-transition);
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color:#282c34;
+  color: var(--clr-text);
+}
+
+.buttonFooter:hover {
+  transform: scale(1.03);
+  background-color: var(--clr-text);
+  color: var(--clr-primary);
+}
+/* END FOOTER STYLE */

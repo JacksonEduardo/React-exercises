@@ -15,7 +15,7 @@ const List = (props) => {
 
 const Person = ({ id, nome, stato, img, canc }) => {
   return (
-    <article>
+    <article className="articleDating">
       <img src={img} alt="prs" className="person-img" />
       <div className="person-info">
         <div className="person-action">
