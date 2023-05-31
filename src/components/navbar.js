@@ -45,6 +45,16 @@ const BasicExample = () => {
                   Slides
                 </Link>
               </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link className="nav-link" to="/iceCream">
+                  Ice cream
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link className="nav-link" to="/gradient">
+                  Gradient Color
+                </Link>
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link

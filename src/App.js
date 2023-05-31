@@ -8,7 +8,8 @@ import Dark from "./pages/darkMode/darkMode";
 import Footer from "./components/footer";
 import Holliday from "./pages/hollidays/holliday";
 import SlidePage from "./pages/slide/slidePage";
-
+import IceCream from "./pages/iceCream/iceCream";
+import Gradient from "./pages/gradient/gradient";
 function App() {
   return (
     <Router>
@@ -20,6 +21,8 @@ function App() {
           <Route path="/dark" element={<Dark />} />
           <Route path="/holliday" element={<Holliday />} />
           <Route path="/slide" element={<SlidePage />} />
+          <Route path="/iceCream" element={<IceCream />} />
+          <Route path="/gradient" element={<Gradient />} />
         </Routes>
         <Footer />
       </div>
