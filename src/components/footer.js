@@ -20,7 +20,7 @@ const Footer = () => {
           className="buttonFooter text-white"
           onClick={() => navigate(-1)}
         >
-          Last Page
+          Previous Page
         </button>
       </div>
       <div className="d-flex justify-content-around">

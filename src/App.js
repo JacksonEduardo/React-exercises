@@ -7,6 +7,7 @@ import Dating from "./pages/dating/dating";
 import Dark from "./pages/darkMode/darkMode";
 import Footer from "./components/footer";
 import Holliday from "./pages/hollidays/holliday";
+import SlidePage from "./pages/slide/slidePage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/dating" element={<Dating />} />
           <Route path="/dark" element={<Dark />} />
           <Route path="/holliday" element={<Holliday />} />
+          <Route path="/slide" element={<SlidePage />} />
         </Routes>
         <Footer />
       </div>

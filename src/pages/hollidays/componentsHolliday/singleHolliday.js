@@ -10,7 +10,7 @@ const singleHolliday = ({
   previous,
 }) => {
   return (
-    <div className="holiday-container">
+    <div className="holiday-container px-4 py-3">
       <img src={img} alt={titolo} className="img" />
       <div className="holiday-info">{titolo}</div>
       <p>{descrizione}</p>

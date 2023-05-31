@@ -40,6 +40,11 @@ const BasicExample = () => {
                   Hollidays
                 </Link>
               </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link className="nav-link" to="/slide">
+                  Slides
+                </Link>
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link

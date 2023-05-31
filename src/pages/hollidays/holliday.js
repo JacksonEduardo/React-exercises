@@ -7,7 +7,7 @@ const Holliday = () => {
   return (
     <div className="section-center">
       <div className="containerHolliday">
-        <Title text="Le nostre Vacanze" />
+        <Title text="Our Journey" />
         <Journey />
       </div>
     </div>
