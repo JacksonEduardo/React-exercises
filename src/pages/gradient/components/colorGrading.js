@@ -4,6 +4,7 @@ import SingleColor from "../components/singleColor";
 import { v4 as uuidv4 } from "uuid";
 
 const ColorGrading = () => {
+  const [isError, setIsError] = useState(false);
   const [selectedColor, setSelectedColor] = useState([]);
   const [colorInput, setColorInput] = useState({
     color: "",
@@ -17,12 +18,26 @@ const ColorGrading = () => {
     e.preventDefault();
     if (colorInput.color && colorInput.qty) {
       const { color, qty } = colorInput;
-      setSelectedColor(
-        new Values(color).all(Math.round((100 / parseInt(qty, 10)) * 2))
-      );
+      try {
+        setSelectedColor(
+          new Values(color).all(Math.round((100 / parseInt(qty, 10)) * 2))
+        );
+        setColorInput({
+          color: "",
+          qty: 10,
+        });
+      } catch (error) {
+        setIsError(true);
+      }
+      // setSelectedColor(
+      //   new Values(color).all(Math.round((100 / parseInt(qty, 10)) * 2))
+      // );
     }
   };
   const handdleChange = (e) => {
+    if (isError) {
+      setIsError(false);
+    }
     const { name, value } = e.target;
     setColorInput({
       ...colorInput,
@@ -30,7 +45,10 @@ const ColorGrading = () => {
     });
   };
 
-  console.log(selectedColor);
+  useEffect(() => {
+    setColorInput({ qty: 10, color: "#ff7f50" });
+    setSelectedColor(new Values("#ff7f50").all(Math.round((100 / 10) * 2)));
+  }, []);
   return (
     <>
       <form className="form" onSubmit={handdleSubmit}>
@@ -61,7 +79,9 @@ const ColorGrading = () => {
         </button>
       </form>
       <section className="color-section">
-        {selectedColor.length > 0 ? (
+        {isError ? (
+          <h4 className="section-center">the color code does not exist</h4>
+        ) : selectedColor.length > 0 ? (
           selectedColor.map((el) => <SingleColor key={uuidv4()} {...el} />)
         ) : (
           <h4>Loading</h4>
